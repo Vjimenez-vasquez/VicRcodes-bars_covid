@@ -9,22 +9,32 @@ Modern pandemic COVID-19 is currently studied at the molecular level by the geno
 
 ## Usage 
 ```r
-
-#setwd#
-setwd("C:/Users/HP/Documents/corridas_sars_cov2/totales_diciembre2021")
-dir()
+# "bars_covid" requires some R libraries #
 library(ggplot2)
 library(gridExtra)
 library(lubridate)
-source("C:/Users/HP/Documents/vic_r_codes/barras_frequencias/code_2.R")
-source("C:/Users/HP/Documents/vic_r_codes/curves/code_inferir_variante.R")
-source("C:/Users/HP/Documents/vic_r_codes/mapas/code_maps_alt.R")
 
+#paste "bars_covid.R" file in your working directory#
+source("bars_covid.R")
+
+#read your data#
 d <- read.csv("metadata_f33.tsv", header=TRUE, sep="\t")
+
+#we strictly need the following column names#
 names(d) <- c("strain","EPI_ISL","date","division","host","age","gender","pangolin_lineage","VOC.VOI")
-data <- inferir_variante(data=d,code="peru_variantes")
-names(data)
-unique(data$division)
+
+## 1 ##
+#prepare function: sem_lin#
+#sem_lin generates a lineage report per year and a given epidemiological week for all divisions#
+sem_lin <- function(data,week,year,min,max){
+data = data frame containing the data. 
+week = epidemiological week according to CDC criteria. 
+year = dessired year 
+min = if your data includes 20 divisions (departments or provinces), "min" argument specifies the first divion to plot, equals the minimun range of divisions to plot.   
+max = if your data includes 20 divisions (departments or provinces), "max" argument specifies the last divions to plot, equals the maximum range of divisions to plot. 
+
+#example#
+as <- sem_lin(data=data,week=52,year=2021,min=1,max=4)
 
 tab <- mes_lin(data=data,month="diciembre",year=2021,min=1,max=8)
 tab <- mes_lin(data=data,month="diciembre",year=2021,min=9,max=16)
