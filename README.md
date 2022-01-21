@@ -1,4 +1,4 @@
-# vic_R_codes_II - bars_covid
+# vic_R_codes - bars_covid
 
 ![](https://onlinelibrary.wiley.com/doi/10.1002/jmv.27261)
 
