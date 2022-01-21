@@ -46,7 +46,12 @@ asa <- mes_var(data=data,month="diciembre",year=2021,min=9,max=16)
 asa <- mes_var(data=data,month="diciembre",year=2021,min=17,max=24)
 
 tr <- sem_var(data=data,week=52,year=2021,min=1,max=9)
-as <- sem_lin(data=data,week=52,year=2021,min=1,max=4)
+as <- sem_lin(data=data,week=52,year=2021,min=1,max=4) 
 
 ```
+## Output
+Frequency barplots indicating number of genomes in y-axis and variant/lineage in x-axis per week/month. 
+
+## Usage
+Use "bars_covid" to obtain graphics to explore the progression of the pandemic per week or region.  
 
