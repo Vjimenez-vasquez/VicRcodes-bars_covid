@@ -55,3 +55,7 @@ Frequency barplots indicating number of genomes in y-axis and variant/lineage in
 ## Usage
 Use "bars_covid" to obtain graphics to explore the progression of the pandemic per week or region.  
 
+This code was designed by Victor Jimenez Vasquez - vr.jimenez.vs@gmail.com.
+
+Vic
+
