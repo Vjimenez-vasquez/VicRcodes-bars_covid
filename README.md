@@ -50,10 +50,10 @@ as <- sem_lin(data=data,week=52,year=2021,min=1,max=4)
 
 ```
 ## Output
-Frequency barplots indicating number of genomes in y-axis and variant/lineage in x-axis per week/month. 
+Frequency barplots indicating number of genomes in y-axis and variant/lineage in x-axis per week/month for a set of regions. 
 
 ## Usage
-Use "bars_covid" to obtain graphics to explore the progression of the pandemic per week or region.  
+Use "bars_covid" to explore the lineage/variant progression of the pandemic per week/month in a set of regions for a given country.  
 
 This code was designed by Victor Jimenez Vasquez - vr.jimenez.vs@gmail.com.
 
