@@ -1,4 +1,4 @@
-# vic_R_codes - bars_covid
+# VicRcodes - bars_covid
 
 ![](https://onlinelibrary.wiley.com/doi/10.1002/jmv.27261)
 ![barras_mes_lin](https://user-images.githubusercontent.com/89874227/150564002-35038c3f-f643-4194-863b-bc598fb6f363.jpg)
